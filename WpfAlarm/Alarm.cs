@@ -9,13 +9,15 @@ namespace WpfAlarm
         public Boolean repeat;
         public SoundPlayer ringTone;
         public int snoozeTime;
+        private String baseUrl = "C:\\Users\\formi\\Downloads\\testFolder\\";
 
         public Alarm(String time, Boolean isRepeat = false, string ringToneName = "something.wav", int manualSnoozeTime = 5 * 60 * 1000)
         {
             ringTime = time;
             repeat = isRepeat;
-            ringTone = new SoundPlayer(ringToneName);
+            ringTone = new SoundPlayer(baseUrl + ringToneName);
             snoozeTime = manualSnoozeTime;
+            
         }
 
         public void compareTime(DateTime time)
