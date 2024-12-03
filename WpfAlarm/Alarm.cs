@@ -11,6 +11,14 @@ namespace WpfAlarm
         public int snoozeTime;
         private String baseUrl = "C:\\Users\\formi\\Downloads\\testFolder\\";
 
+        public Alarm()
+        {
+            ringTime = "";
+            repeat = false;
+            ringTone = new SoundPlayer();
+            snoozeTime = 0;
+        }
+
         public Alarm(String time, Boolean isRepeat = false, string ringToneName = "something.wav", int manualSnoozeTime = 5 * 60 * 1000)
         {
             ringTime = time;

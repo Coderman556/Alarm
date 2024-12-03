@@ -10,7 +10,7 @@ namespace WpfAlarm
         public MainWindow()
         {
             InitializeComponent();
-
+            List<Alarm> alarmArray = new List<Alarm>();
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
@@ -24,6 +24,11 @@ namespace WpfAlarm
         private void Timer_Tick(object? sender, EventArgs e)
         {
             TimeDisplay.Content = DateTime.Now.ToString("hh:mm:ss");
+
+        }
+
+        private void Compare_Time(object? sender, EventArgs e)
+        {
         }
     }
 }
