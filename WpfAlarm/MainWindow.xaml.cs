@@ -21,7 +21,7 @@ namespace WpfAlarm
             alarm1.Ring();
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private void Timer_Tick(object? sender, EventArgs e)
         {
             TimeDisplay.Content = DateTime.Now.ToString("hh:mm:ss");
         }
