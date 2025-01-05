@@ -9,7 +9,7 @@ namespace WpfAlarm
         public Boolean repeat;
         public SoundPlayer ringTone;
         public int snoozeTime;
-        private String baseUrl = "C:\\Users\\formi\\Downloads\\testFolder\\";
+        private String baseUrl = "C:\\Users\\wilme\\Downloads\\";
 
         public Alarm()
         {

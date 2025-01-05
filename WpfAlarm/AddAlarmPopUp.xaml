@@ -10,8 +10,9 @@
         <StackPanel>
             <TextBlock Text="Text Block" FontWeight="Bold" HorizontalAlignment="Center"/>
             <TextBox Text="placeholdertext"/>
-            <Button Content="OK" HorizontalAlignment="Center" Click="OButton_Click"/>
-            <Button Content="Cancel" HorizontalAlignment="Center" Click="XButton_Click"/>
+
+            <Button Content="OK" HorizontalAlignment="Center" Click="OButton_Click" Width="163"/>
+            <Button Content="Cancel" HorizontalAlignment="Center" Click="XButton_Click" Width="163" Background="Navy" Foreground="Black"/>
         </StackPanel>
     </Grid>
 </UserControl>

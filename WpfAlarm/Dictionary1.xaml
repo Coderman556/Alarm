@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="NeutralBtn" TargetType="Button">
+        <!-- alignment -->
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Bottom" />
+        
+        <!-- size and color -->
+        <Setter Property="Width" Value="163" />
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Background" Value="Navy" />
+
+        <!-- Text -->
+        <Setter Property="FontFamily" Value="Segoe UI"/>
+        <Setter Property="FontSize" Value="12 px"/>
+        <Setter Property="Foreground" Value="Black" />
+    </Style>
+    <!-- 
+        x HorizontalContentAlignment = "Center" 
+        VerticalAlignment="Bottom" 
+        Width="163" 
+        Height="25" 
+        Background="Navy" 
+        Foreground="Black"
+        FontFamily="Segoe UI"
+        FontSize="12 px"
+    -->
+</ResourceDictionary>
