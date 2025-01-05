@@ -1,5 +1,7 @@
 ﻿using System.Windows;
+using System.Windows.Controls.Primitives;
 using System.Windows.Threading;
+
 
 
 namespace WpfAlarm
@@ -29,6 +31,12 @@ namespace WpfAlarm
 
         private void Compare_Time(object? sender, EventArgs e)
         {
+
+        }
+
+        private void Add_Alarm(object sender, RoutedEventArgs e)
+        {
+            AddAlarmPopupDialog newAlarm = new AddAlarmPopupDialog();
         }
     }
 }

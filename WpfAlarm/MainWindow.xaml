@@ -10,6 +10,9 @@
     <Grid>
         <Label x:Name="Title" Content="Alarm App" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Foreground="Navy"/>
         <Label x:Name="TimeDisplay" Content="##Time##" HorizontalAlignment="Center" VerticalAlignment="Center" Width="163" HorizontalContentAlignment="Center" Foreground="Navy" FontSize="36"/>
-        <Button x:Name="BtnAddAlarm" HorizontalContentAlignment = "Center" VerticalAlignment="Bottom" Width="163" Height="25" Background="Navy" Foreground="Black" Content="Add alarm" Click="" BorderBrush="DarkSlateGray"/>
+        <Button x:Name="BtnAddAlarm" HorizontalContentAlignment = "Center" VerticalAlignment="Bottom" Width="163" Height="25" Background="Navy" Foreground="Black" Content="Add alarm" Click="Add_Alarm" BorderBrush="DarkSlateGray"/>
+        <Popup Name="AddAlarmPopup" IsOpen="False" StaysOpen="False" Placement="Center">
+            <local:AddAlarmPopupDialog/>
+        </Popup>
     </Grid>
 </Window>
